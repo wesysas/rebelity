@@ -1,0 +1,12 @@
+.icon-but {
+    div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ion-icon {
+            margin-left: 5px;
+            margin-bottom: 1px;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+
+#page_check_pin {
+    .login-background {
+        background: url(/assets/img/sign_in_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 100vh;
+    }
+
+    .login-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 500px;
+        margin: auto;
+        height: fit-content;
+        z-index: 1;
+
+        .keypadwrapper {
+            text-align: center;
+            width: 100%;
+            color: #FFFFFF;
+
+            .inputwrapper {
+                margin: 3em;
+                line-height: 0.61em;
+                vertical-align: middle;
+
+                .numberinput {
+                    display: inline-block;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50px;
+                    border: 1px solid #FFFFFF;
+                    margin-right: 2%;
+                    margin-left: 2%;
+                    font-size: 2em;
+                }
+
+                .white-numberinput {
+                    background: var(--white);
+                }
+            }
+
+            .keypad {
+                
+                .numberline {
+                    width: 100%;
+                    margin-bottom: 50px;
+                }
+
+                .content {
+                    display: inline-block;
+                    margin: 0 2%;
+
+                    div {
+                        width: 4em;
+                        height: 4em;
+                        text-align: center;
+                        border: 1px solid #FFFFFF;
+                        border-radius: 70px;
+                        display: inline-block;
+                        cursor: pointer;
+                        -webkit-touch-callout: none;
+                        -webkit-user-select: none;
+                        -khtml-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+
+                        span:nth-child(1) {
+                            display: block;
+                            font-size: 1.8em;
+                            height: 1em;
+                            margin-top: 0.4em;
+                        }
+
+                        span:nth-child(2) {
+                            font-size: 0.6em;
+                        }
+                    }
+
+                    div:hover {
+                        background-color: #ffffff;
+                        color: #000000;
+                        -webkit-touch-callout: none;
+                        -webkit-user-select: none;
+                        -khtml-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                    }
+                }
+
+                // #lineone {
+                //     position: absolute;
+                //     bottom: 70%;
+                // }
+
+                // #linetwo {
+                //     position: absolute;
+                //     bottom: 50%;
+                // }
+
+                // #linethree {
+                //     position: absolute;
+                //     bottom: 30%;
+                // }
+
+                // #linefour {
+                //     position: absolute;
+                //     bottom: 10%;
+                // }
+            }
+        }
+    }
+
+    .login-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-color);
+        z-index: -1;
+        opacity: .8;
+    }
+}

@@ -1,0 +1,38 @@
+
+.alert-modal {
+    z-index: 100;
+    text-align: center;
+    height: 100%;
+    display: contents;
+
+    div:first-child {
+        margin-top: 20px;
+    }
+    
+    img {
+        width: 40%;
+    }
+
+    .text-white {
+        color: var(--white);
+    }
+
+    .modal-bottom-btn {
+        height: 60px !important;
+        font-size: 1.6rem !important;
+        font-weight: 500 !important;
+        margin: 56px 0px 0px 0px !important;
+    }
+
+    .modal-button-bar {
+        .modal-confirm-btn {
+            height: 60px !important;
+            font-size: 1.6rem !important;
+            font-weight: 500 !important;
+            margin: 56px 0px 0px 0px !important;
+            width: 50%;
+            --border-radius: 0px;
+            --padding-end:  0px;
+        }
+    }
+}

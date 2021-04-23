@@ -1,0 +1,85 @@
+.card-sale {
+    margin-top: 40px;
+
+    .calc-board {
+        padding: 5px 15px 25px 15px;
+        margin-top: 10px;
+        background: var(--secondary);
+
+        #ticket {
+            text-align:center;
+        }
+
+        .amount-buttons {
+            display: flex;
+            justify-content: center;
+
+            .btn-out {
+                background: #007bff;
+                font-size: 25px;
+                font-weight: bold;
+                border-radius: 0px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 2px;
+            }
+
+            .btn-amount {
+                background: var(--primary);
+                font-size: 25px;
+                font-weight: bold;
+                border-radius: 0px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 2px;
+            }
+        }
+
+        .amount-input {
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: var(--bg-color);
+            font-size: 40px;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            margin-top: 20px;
+        }
+
+        .pay-container {
+            text-align: center;
+
+            .pay-buttons {
+                display: flex;
+                justify-content: center;
+
+                .pay-btn {
+                    font-size: 20px;
+                    font-weight: bold;
+                    border-radius: 0px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    margin: 5px;
+                    border-radius: .5rem;
+                    text-transform: uppercase;
+                }
+                
+                .btn-cancel {
+                    background: #dc3545;
+                }
+    
+                .disabled {
+                    color: var(--text-light) !important;
+                }
+
+                .btn-clear {
+                    background: #007bff;
+                }
+
+                .btn-continue {
+                    width: 160px;
+                    background: #007bff;
+                }
+            }
+        }
+    }
+}

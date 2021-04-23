@@ -1,0 +1,100 @@
+.utility-container {
+    background: var(--bg-color);
+    margin:15px;
+
+    .alert {
+        
+        background-color:#fff;
+        color:#000;
+        text-align:center; 
+        border-width:2px;
+        border-radius: 2px;
+        padding: .75rem 1.25rem;
+        margin-bottom: 15px;
+        width: 100%;
+
+        strong {
+            margin-right:10px;
+        }
+    }
+
+    .button-container {
+        --ion-grid-column-padding: 25px 5px 15px 15px;
+        padding: 25px 5px 15px 15px;
+
+        .clockin-button {
+            display: flex;
+            height: 100px;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 20px;
+            --min-height: 100px;
+            background: radial-gradient(circle, rgba(255,0,35,0.38697477281928394) 0%, rgba(121,9,9,1) 51%, rgba(255,0,43,0.38697477281928394) 100%);
+
+            div {
+                width: 100%;
+                padding: 20px 0px;
+                height: 100%;
+
+                ion-icon {
+                    display: block;
+                    height: 2.5rem;
+                    margin: auto;
+                    width: 2.5em;
+                }
+
+                ion-label {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .clock-in div ion-icon {
+            padding-right: 10px;
+        }
+
+        .clock-out div ion-icon {
+            padding-left: 10px;
+        }
+
+        .exit-button {
+            background: red !important;
+        }
+
+        .ripple-parent {
+            position: relative;
+            overflow: hidden;
+        }
+    }
+
+    .info-container {
+        --ion-grid-column-padding: 25px 15px 15px 5px;
+        padding: 25px 15px 15px 5px;
+
+        ion-label {
+            font-size: 0.9rem;
+            color:#8896a0;
+        }
+
+        ion-label.account {
+            color: #93a2a9 !important;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        ion-label.basement {
+            color:#8877a9 !important;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        ion-label.user-name {
+            color: #26C281 !important;
+            font-weight: bold;
+        }
+    }
+}

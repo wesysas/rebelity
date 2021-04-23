@@ -1,0 +1,7 @@
+{
+  "name": "Rebelity",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

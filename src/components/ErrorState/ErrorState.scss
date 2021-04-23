@@ -1,0 +1,27 @@
+
+.modal {
+    z-index: 100;
+    text-align: center;
+    height: 100%;
+    display: contents;
+
+    div:first-child {
+        margin-top: 50px;
+    }
+    
+    img {
+        width: 50%;
+        margin-right: 30px;
+    }
+
+    .text-white {
+        color: var(--white);
+    }
+
+    .modal-bottom-btn {
+        height: 60px !important;
+        font-size: 1.6rem !important;
+        font-weight: 500 !important;
+        margin: 56px 0px 0px 0px !important;
+    }
+}

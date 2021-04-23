@@ -1,0 +1,16 @@
+
+.modal-overlay {
+    justify-content: 'flex-end';
+    background: 'rgba(0, 0, 0, 0.6)';
+    position: 'absolute';
+    top: 0;
+    bottom: 0;
+    width: '100%';
+
+    
+}
+
+.error-modal {
+    --background: #222;
+}
+

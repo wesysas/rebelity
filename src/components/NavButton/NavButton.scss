@@ -1,0 +1,17 @@
+.ripple-parent {
+    position: relative;
+    overflow: hidden;
+}
+
+.button {
+    --background: transparent;
+    --color-activated: white;
+    --color-hover: white;
+    --padding-start: 0px;
+    --padding-top: 0px;
+
+    div ion-icon {
+        margin-bottom: 10px !important;
+    }
+}
+

@@ -1,0 +1,303 @@
+.report-container {
+    display: flex;
+
+    .total-sales {
+        padding: 1.5rem;
+        text-align: center;
+        background-color: var(--secondary);
+        width: 250px;
+        height: fit-content;
+
+        .net-sales-title {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .net-sales-val {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .sale-date {
+            color: var(--text-light2);
+            margin: 0;
+        }
+
+        .btn-success {
+            border-radius: 30px;
+            color: var(--white);
+            background-color: #28a745;
+            padding: 1rem 3rem;
+            outline: none;
+            margin-top: .5rem;
+            margin-bottom: 1.5rem;
+            font-weight: bolder;
+            font-size: 1rem;
+            text-transform: uppercase;
+            display: inline-block;
+
+            p {
+                margin: 0;
+                line-height: 1.5;
+            }
+        }
+
+        .gross-sales-title {
+            font-size: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        .gross-sales-val {
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .order-info {
+            color: var(--text-light2);
+            font-size: 80%;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+
+    .report-content {
+        margin: 20px 30px;
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+        width: calc(100% - 250px);
+
+        .histo-chart-panel {
+            background-color: var(--secondary);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+
+            .chart-toolbar {
+                display: flex;
+
+                .menus {
+                    display: flex;
+
+                    label {
+                        font-size: 1.5rem;
+                        color: var(--text-light2);
+
+                        &.active {
+                            color: var(--success_color);
+                        }
+                    }
+
+                    label:last-child {
+                        margin: 0 1.5rem;
+                    }
+                }
+
+                .select-container {
+                    margin-left: auto;
+                    margin-right: 0;
+
+                    select {
+                        border-radius: 50px;
+                        border: 1px solid var(--success_color);
+                        background: var(--bg-color);
+                        color: var(--success_color);
+                        padding: .5rem 1.5rem;
+                        font-size: 1.25rem;
+                        margin-bottom: .5rem;
+                        font-weight: 500;
+                        line-height: 1.2;
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+
+            div[class^='col-'] {
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            .col-7 {
+                -ms-flex: 0 0 58.333333%;
+                flex: 0 0 58.333333%;
+                max-width: 58.333333%;
+            }
+
+            .col-6 {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+            .col-5 {
+                -ms-flex: 0 0 41.666667%;
+                flex: 0 0 41.666667%;
+                max-width: 41.666667%;
+            }
+        }
+
+        .report-card {
+            margin-bottom: 1.5rem;
+
+            .card-content {
+                background: var(--secondary);
+                padding: 1.5rem;
+                display: flex;
+                align-items: center;
+
+                img {
+                    max-width: 80px;
+                    height: auto;
+                }
+
+                .label-area {
+                    margin-left: 1.5rem;
+
+                    span {
+                        font-size: 1rem;
+                        color: var(--text-light2);
+                    }
+
+                    strong {
+                        display: block;
+                        font-size: 2rem;
+                        margin-bottom: .5rem;
+                        font-weight: 500;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+
+        .pie-chart-area {
+            background-color: var(--secondary);
+            padding: 1rem;
+            height: calc(100% - 1.5rem);
+            position: relative;
+        }
+
+        .top-selling {
+            background: var(--secondary);
+            padding: 1.5rem;
+            margin-top: .5rem;
+
+            .selling-title {
+                margin-top: 0;
+                margin-bottom: 3rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+
+            .selling-item {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+
+                img {
+                    margin-right: 1rem;
+                    border-radius: 15px;
+                    align-self: center;
+                    vertical-align: middle;
+                    border-style: none;
+                }
+
+                .selling-item-body {
+                    -ms-flex: 1;
+                    flex: 1;
+
+                    h5 {
+                        margin: .25rem 0;
+                        font-size: 1.25rem;
+                        font-weight: 500;
+                        line-height: 1.2;
+                    }
+
+                    span {
+                        color: var(--text-light2);
+                    }
+                }
+            }
+        }
+
+        .payment-methods {
+            background: var(--secondary);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: .5rem;
+
+            .title {
+                margin-top: 0;
+                margin-bottom: 3rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+
+            .progress-bar-box {
+                margin-bottom: 1.5rem;
+                display: flex;
+                align-items: center;
+
+                .sub-title {
+                    font-size: 1rem;
+                    margin: 0;
+                    min-width: 120px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                }
+
+                .progress {
+                    height: 20px;
+                    width: 100%;
+                    background: var(--bg-color);
+                    border-radius: 20px;
+                    display: -ms-flexbox;
+                    display: flex;
+                    overflow: hidden;
+                    font-size: .75rem;
+
+                    .progress-bar {
+                        border-radius: 20px;
+                        background-color: #28a745;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        overflow: hidden;
+                        color: #fff;
+                        text-align: center;
+                        white-space: nowrap;
+                        transition: width .6s ease;
+                    }
+                }
+
+                .value-label {
+                    text-align: right;
+                    min-width: 100px;
+
+                    span {
+                        color: var(--text-light2);
+                    }
+                }
+            }
+        }
+    }
+}

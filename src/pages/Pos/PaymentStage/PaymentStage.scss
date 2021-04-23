@@ -1,0 +1,104 @@
+.payment-stage {
+    margin-top: 20px;
+
+    .payment-success {
+        text-align: center;
+
+        .success {
+            ion-icon {
+                font-size:100px;
+                color:var(--success_color);
+            }
+
+            div {
+                font-size:25px;
+                color:var(--success_color);
+            }
+        }
+
+        .purchase-receipt {
+            margin-top: 50px;
+
+            .receipt-buttons {
+                display: flex;
+                justify-content: center;
+
+                .receipt-but {
+                    background: #007bff;
+                    font-size: 20px;
+                    font-weight: bold;
+                    border-radius: 0px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    margin: 2px;
+                    border-radius: .25rem;
+                    text-transform: uppercase;
+                }
+
+                .done-but {
+                    background: var(--primary) !important;
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: bold;
+                    border-radius: 0px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    margin: 20px;
+                    border-radius: .25rem;
+                    text-transform: uppercase;
+                }
+            }
+
+            .receipt-input {
+                margin: 20px auto 20px auto;
+                width: 400px;
+                text-align: center;
+                background-color: white;
+                color: var(--bg-color);
+                font-size: 20px;
+                border-radius: .25rem;
+            }
+        }
+    }
+
+    .payment-failed {
+        text-align: center;
+
+        .failed {
+            ion-icon {
+                font-size:100px;
+                color:var(--red_color);
+            }
+
+            div {
+                font-size:25px;
+                color:var(--red_color);
+            }
+        }
+
+        .receipt-buttons {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+
+            .receipt-but {
+                background: #007bff;
+                font-size: 20px;
+                font-weight: bold;
+                border-radius: 0px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 2px;
+                border-radius: .25rem;
+            }
+
+            .retry {
+                background: #007bff;
+            }
+
+            .cancel {
+                background: #dc3545;
+            }
+        }
+    }
+}

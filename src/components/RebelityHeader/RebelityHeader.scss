@@ -1,0 +1,118 @@
+
+.rebelity-header {
+    background: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .logo-box {
+        width: 20%;
+        margin-left: 4%;
+    }
+
+    .menu-container {
+        background: var(--secondary);
+        width: 75%;
+    }
+
+    .menu-container-width-50 {
+        background: var(--secondary);
+        width: 50% !important;
+    }
+
+    .menu-container-width-30 {
+        background: var(--secondary);
+        width: 30% !important;
+    }
+
+    .menu-bar {
+        --background: var(--secondary);
+        height: 80px;
+    }
+
+    // .menu-button {
+    //     --color: var(--white);
+    //     --border-width: 0px;
+    //     --indicator-height: 5px;
+    //     --indicator-color: var(--green_color);
+    //     --color-checked: var(--green_color);
+    //     --color-focused: var(--green_color);
+    // }
+
+    .menu-button {
+        width: 15%;
+        height: 80px;
+        --background: var(--secondary);
+        background: var(--secondary);
+        padding-top: 15px;
+        --color: var(--white);
+        --border-width: 0px;
+        --indicator-height: 5px;
+        --indicator-color: var(--green_color);
+        --color-checked: var(--green_color);
+        --color-focused: var(--green_color);
+        text-align: center;
+        font-weight: bold;
+        visibility: visible;
+
+        ion-icon {
+            color: var(--white);
+            margin-right: 5px;
+            margin-left: -10px;
+        }
+    }
+
+    .active-menu-button {
+        width: 15%;
+        height: 80px;
+        --background: var(--secondary);
+        background: var(--secondary);
+        padding-top: 15px;
+        --color: var(--green_color);
+        --border-width: 0px;
+        --indicator-height: 5px;
+        --indicator-color: var(--green_color);
+        --color-checked: var(--green_color);
+        --color-focused: var(--green_color);
+        font-weight: bold;
+        text-align: center;
+        visibility: visible;
+        border-bottom: 5px solid var(--green_color);
+
+        ion-icon {
+            color: var(--green_color);
+            margin-right: 5px;
+            margin-left: -10px;
+        }
+    }
+
+    .logout-button {
+        width: 15%;
+        height: 80px;
+        --background: var(--secondary);
+        background: var(--secondary);
+        padding-top: 15px;
+        --color: red;
+        --border-width: 0px;
+        --indicator-height: 5px;
+        --indicator-color: var(--green_color);
+        --color-checked: var(--green_color);
+        --color-focused: var(--green_color);
+        text-align: center;
+        font-weight: bold;
+        visibility: visible;
+
+        ion-icon {
+            color: red;
+            margin-right: 5px;
+            margin-left: -10px;
+        }
+    }
+}
+
+
+
+.error-modal {
+    --background: #222;
+}
+
